@@ -6,16 +6,14 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Provider} from "react-redux";
 import {createStore} from "redux";
-import reducers from "./store";
-
-const store = createStore(reducers);
 
 
-ReactDOM.render(<Provider store={store}>
+
+ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
-  </Provider>,
+  ,
   document.getElementById('root')
 );
 
